@@ -14,3 +14,9 @@ console.log(cajon1);
 //Null
 var sinnada=null
 
+// Formula para medir cantidad de caracteres
+
+function largo(x){
+    console.log(x.length)
+}
+largo("")
