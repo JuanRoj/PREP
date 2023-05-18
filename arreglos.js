@@ -12,7 +12,7 @@ console.log(elementoDelArray);
 var nombres = ['Matias', 'María', 'Diego', 'Rosa']
 console.log(nombres.length);
 
-// PUSH(agrega dato en la ultima posicion del arreglo) y UNSHIFT(elimina el dato 1era posicion del arreglo)
+// PUSH(agrega dato en la ultima posicion del arreglo) y UNSHIFT(agrega el dato 1era posicion del arreglo)
 var colores = ['Amarillo', 'Azul'];
 colores.push('Rojo');
 colores.unshift('Verde');
@@ -33,12 +33,12 @@ var numeros = [ 1, 6, 8, 9, 43 ];
 var cumplenCondicion = numeros.every( ( num ) => { num > 5 } );
 console.log(cumplirCondicion);
 
-// SPLIT
+// SPLIT separa una cadena
 var palabra = 'Enrique';
 var palabraSeparada = palabra.split('');
 console.log(palabraSeparada);
 
-// JOIN
+// JOIN concatenar palabras
 var palabraArreglada = palabraSeparada.join('');
 consola.log(palabraArreglada);
 
@@ -56,10 +56,33 @@ console.log(palabraArreglada)
 
 // FOR EACH (nos permite recorre un arreglo realizando una accion para algun elemento)
 var numeros = [ 1, 2, 3, 4 ];
-numeros.forEach( (num) => { console.log(num) } )
+//numeros.forEach( (num) => { console.log(num) } )
 numeros.forEach((num) => {if(num===3) {console.log(num)}}) // la accion es mostrar los iguales a 3
 
 // MAP (NOS PERMITE RECCORER UN ARREGLO Y PUEDE REALIZAR CAMBIOS)
 var numeros = [ 1, 2, 3, 4 ];
 var masUno = numeros.map( (num) => { return num + 1 } );
 console.log(masUno);
+
+var arr=[1,2,3,4,5]
+for (var i =0;i<arr.length;i++) {
+    console.log(arr[i]);
+}
+
+function encontrarP(string){
+    var letras = string.split('');
+    //console.log(letras);
+    for(let i=0; i<letras.length;i++){
+        if(letras[i]==='p'){
+            console.log('si contiene a P');
+        }
+    }
+}
+encontrarP('pato')
+encontrarP('podar')
+
+var arr = []
+while(arr.length<6){
+    arr.push('BOOM')
+}
+console.log(arr)
